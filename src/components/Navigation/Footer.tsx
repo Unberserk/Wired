@@ -136,13 +136,13 @@ export function Footer() {
           <Text as='p' $isSub={true}>
             &copy; {year}{' '}
             <a
-              href='https://zenime.netlify.app'
+              href='https://www.miruro.com'
               rel='noopener noreferrer'
               style={{ color: 'grey' }}
             >
-              zenime.netlify.app
+              miruro.com
             </a>{' '}
-            | Website Made by <strong>Miruro no Kuon & Brentph505</strong>
+            | Website Made by <strong>Miruro no Kuon</strong>
           </Text>
           <nav aria-label='Social Links'>
             <SocialIconsWrapper>

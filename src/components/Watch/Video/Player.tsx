@@ -295,7 +295,7 @@ export function Player({
       <MediaPlayer
         className='player'
         title={`${animeVideoTitle} - Episode ${episodeNumber}`}
-        src={`https://goodproxy.goodproxy.workers.dev/fetch?url=${encodeURIComponent(src)}`}
+        src={src}
         autoplay={autoPlay}
         crossorigin
         playsinline

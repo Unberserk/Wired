@@ -40,17 +40,17 @@ const MainContent = styled.div`
 const sections = [
   {
     title: 'About',
-    title2: "What's Zenime?",
+    title2: "What's Miruro?",
     content: (
       <Paragraph>
-        Zenime is an anime streaming site where you can watch anime online in HD
+        Miruro is an anime streaming site where you can watch anime online in HD
         quality with English subtitles or dubbing. You can also download any
         anime you want without registration.
       </Paragraph>
     ),
   },
   {
-    title2: 'Is Zenime safe?',
+    title2: 'Is Miruro safe?',
     content: (
       <Paragraph>
         Yes. We started this site to improve UX and are committed to keeping our
@@ -61,7 +61,7 @@ const sections = [
     ),
   },
   {
-    title2: 'Why Zenime?',
+    title2: 'Why Miruro?',
     content: (
       <>
         <Paragraph>
@@ -119,7 +119,7 @@ const sections = [
 function About() {
   useEffect(() => {
     const previousTitle = document.title;
-    document.title = 'About | Zenime'; // Set the title when the component mounts
+    document.title = 'About | Miruro'; // Set the title when the component mounts
     return () => {
       // Reset the title to the previous one when the component unmounts
       document.title = previousTitle;

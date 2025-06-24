@@ -1,5 +1,5 @@
 {
-  "name": "Wired",
+  "name": "miruro_no_kuon",
   "private": true,
   "version": "0.5.2",
   "type": "module",
@@ -41,8 +41,7 @@
     "swiper": "^11.0.7",
     "typescript": "^5.0.0",
     "uuid": "^9.0.1",
-    "wrangler": "^3.52.0",
-    "@netlify/functions": "^1.0.0"
+    "wrangler": "^3.52.0"
   },
   "devDependencies": {
     "@types/bun": "latest",

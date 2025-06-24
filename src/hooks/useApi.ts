@@ -2,11 +2,9 @@ import axios from 'axios';
 import { year, getCurrentSeason, getNextSeason } from '../index';
 
 // Utility function to ensure URL ends with a slash
-function ensureUrlEndsWithSlash(url?: string): string {
-  if (!url) return '';
+function ensureUrlEndsWithSlash(url: string): string {
   return url.endsWith('/') ? url : `${url}/`;
 }
-
 
 // Adjusting environment variables to ensure they end with a slash
 const BASE_URL = ensureUrlEndsWithSlash(
@@ -411,7 +409,7 @@ export async function fetchSkipTimes({
 export async function fetchRecentEpisodes(
   page: number = 1,
   perPage: number = 18,
-  provider: string = 'zoro',
+  provider: string = 'gogoanime',
 ) {
   // Construct the URL with query parameters for fetching recent episodes
   const params = new URLSearchParams({

@@ -26,7 +26,7 @@ const Callback = () => {
       setErrorMessage(
         'Authorization revoked. Please click "Authorize" to grant access.',
       );
-      navigate('/', { replace: true });
+      navigate('/callback', { replace: true });
       return;
     }
 
@@ -41,7 +41,8 @@ const Callback = () => {
           // Store the access token in localStorage
           localStorage.setItem('accessToken', response.data.accessToken);
           // After setting the token, navigate and force a refresh
-          navigate('/profile', { replace: true });
+          navigate('/profile');
+          window.location.reload(); // Force a full page reload to refresh state
         })
         .catch((error) => {
           const errMsg = error.response?.data?.error || 'Error logging in :(';
