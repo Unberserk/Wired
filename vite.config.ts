@@ -9,6 +9,7 @@ export default ({ mode }: ConfigEnv): UserConfigExport => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
   return defineConfig({
+    base: '/',
     plugins: [react()], // Using React plugin from Vite
 
     build: {
