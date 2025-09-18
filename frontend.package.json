@@ -1,0 +1,16 @@
+{
+  "name": "wired-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.0"
+  },
+  "scripts": {
+    "start": "parcel src/index.html --port 3000"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}
